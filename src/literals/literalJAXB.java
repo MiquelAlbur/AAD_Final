@@ -36,9 +36,9 @@ public class literalJAXB {
 	 */
 	public static List<literalXml> unMarshalingLiteralXml(File fitxer) throws JAXBException {
 
-		JAXBContext jContext = JAXBContext.newInstance(literal.class);
+		JAXBContext jContext = JAXBContext.newInstance(literals.class);
 		Unmarshaller jUnmarshaller = jContext.createUnmarshaller();
-		literal unmarshaledList = (literal) jUnmarshaller.unmarshal(fitxer);
+		literals unmarshaledList = (literals) jUnmarshaller.unmarshal(fitxer);
 		return unmarshaledList.getliterals();
 	}
 
