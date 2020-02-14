@@ -1,5 +1,5 @@
 package literals;
 
-public class literalMongoDB {
+public class literalMongoDB extends literal {
 
 }
