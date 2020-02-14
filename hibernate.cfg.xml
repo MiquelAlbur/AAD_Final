@@ -8,6 +8,8 @@
 		<property name="connection.password">rootroot</property>
 		<property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
 		<property name="hibernate.show_sql">true</property>
-		<mapping class="instanciables.literal"/>
+		<mapping class="entitatsHib.literal"/>
+		<mapping class="entitatsHib.idioma"/>
+		<mapping class="entitatsHib.log"/>
 	</session-factory>
 </hibernate-configuration>
