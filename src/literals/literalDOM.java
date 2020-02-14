@@ -1,5 +1,5 @@
 package literals;
 
-public class literalDOM {
+public class literalDOM extends literal {
 
 }
