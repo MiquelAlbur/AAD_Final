@@ -1,11 +1,11 @@
 package principal;
 
-public class navegador {
+public class Main {
 
 	public static void main(String[] args) {
 		// Nombre base de datos: aadfinal
 		// Usuario: root
-		// ContraseÃ±a: rootroot
+		// Contraseña: rootroot
 	}
 
 }

@@ -2,4 +2,31 @@ package principal;
 
 public class tractarEntrada {
 
+	public enum tipusEntrada {
+		LOGIN,//SI DA TIEMPO
+		GOTO, 
+		GOLAST, 
+		LIST, 
+		UP, 
+		INFOFILE, 
+		INFODIR, 
+		HELP,
+		CREATEDIR, 
+		CREATEFILE,
+		SORTBY, 
+		DELETEDIR, 
+		DELETEFILE, 
+		LOADFILE,
+		LOG, 
+		CLEARLOG, 
+		IDIOMA, 
+		SAVEXMLTREE,
+		LOADXMLTREE,
+		GETERRORS,
+		GETWARNING,
+		SETPERMISSION,
+		SAVEJSONTREE,
+		LOADJSONTREE,
+		SETLITERAL
+	}
 }
