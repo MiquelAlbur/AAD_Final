@@ -1,5 +1,5 @@
 package configuracio;
 
-public class configuracioMongoDB {
+public class configuracioMongoDB extends configuracio {
 
 }

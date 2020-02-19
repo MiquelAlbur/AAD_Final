@@ -1,5 +1,5 @@
 package configuracio;
 
-public class configuracioHib {
+public class configuracioHib extends configuracio {
 
 }
