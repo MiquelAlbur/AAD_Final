@@ -1,5 +1,5 @@
 package literals;
 
-public class literal {
+public abstract class literal {
 
 }

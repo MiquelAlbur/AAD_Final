@@ -1,5 +1,5 @@
 package configuracio;
 
-public class configuracioXml {
+public class configuracioXml extends configuracio {
 
 }

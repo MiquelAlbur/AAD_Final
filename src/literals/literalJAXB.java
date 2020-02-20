@@ -8,8 +8,10 @@ import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Unmarshaller;
 
-public class literalJAXB {
-	private List<literalXml> _literals;
+import entitatsXml.literal;
+
+public class literalJAXB extends literal {
+	private List<entitatsXml.literal> _literals;
 	private boolean _carregat;
 	private File _fitxerLiterals;
 	private String _idioma;
@@ -34,11 +36,11 @@ public class literalJAXB {
 	/*
 	 * Passar d'xml a objecte
 	 */
-	public static List<literalXml> unMarshalingLiteralXml(File fitxer) throws JAXBException {
+	public static List<entitatsXml.literal> unMarshalingLiteralXml(File fitxer) throws JAXBException {
 
-		JAXBContext jContext = JAXBContext.newInstance(literals.class);
+		JAXBContext jContext = JAXBContext.newInstance(entitatsXml.literalList.class);
 		Unmarshaller jUnmarshaller = jContext.createUnmarshaller();
-		literals unmarshaledList = (literals) jUnmarshaller.unmarshal(fitxer);
+		entitatsXml.literalList unmarshaledList = (entitatsXml.literalList) jUnmarshaller.unmarshal(fitxer);
 		return unmarshaledList.getliterals();
 	}
 
@@ -48,7 +50,7 @@ public class literalJAXB {
 	public String obtenirLiteral(String literal) {
 		try {
 			if (this._carregat) {
-				List<literalXml> auxLits = _literals.stream() // convert list to stream
+				List<entitatsXml.literal> auxLits = _literals.stream() // convert list to stream
 						.filter(lit -> literal.equals(lit.getId())) // we dont like mkyong
 						.collect(Collectors.toList());
 				if (auxLits != null && auxLits.size() > 0) {

@@ -1,5 +1,5 @@
 package literals;
 
-public class literalHib {
+public class literalHib extends literal {
 
 }

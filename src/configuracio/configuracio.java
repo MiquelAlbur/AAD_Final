@@ -1,5 +1,5 @@
 package configuracio;
 
-public class configuracio {
+public abstract class configuracio {
 
 }
