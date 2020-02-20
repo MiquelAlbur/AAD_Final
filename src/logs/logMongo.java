@@ -7,12 +7,12 @@ import org.bson.Document;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 
-public class logHib {
+public class logMongo {
 	private ArrayList<Document> llista = new ArrayList<Document>();
 	private Document _d;
 	private MongoCollection<Document> _mc;
 
-	public logHib(MongoDatabase md) {
+	public logMongo(MongoDatabase md) {
 		this._mc = md.getCollection("log");
 	}
 
