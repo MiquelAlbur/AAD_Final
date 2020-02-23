@@ -39,7 +39,7 @@ public class tractarEntrada {
 		this._logswitch = true;
 		this._log = "";
 		this._lang = "CAT";// idioma per default
-		this._litm = new literalsMongo();
+		this._litm = new literalMongoDB();
 		this._logm = new logMongo();
 	}
 
